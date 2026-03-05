@@ -14,6 +14,8 @@ The approach used in this project applies image processing techniques to detect 
 - **Tumor Localization**: Efficiently detects and marks tumor regions in medical scans.
 - **Simple and Effective**: Utilizes fundamental computer vision techniques, making it lightweight and easy to deploy.
 - **Customizable**: The parameters for thresholding and contour detection can be adjusted based on different image inputs.
+- **Multi-format Support**: Supports various image formats including JPG, JPEG, and PNG files.
+- **Error Handling**: Robust file loading with proper error messages for missing images.
 
 ## Getting Started
 
