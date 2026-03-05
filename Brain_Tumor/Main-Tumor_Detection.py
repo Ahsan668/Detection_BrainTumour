@@ -42,7 +42,10 @@ class ImageDisplayWidget(QWidget):
         self.backward_button.setFont(font)
 
     def load_image_files(self, folder):
-        self.image_files = glob.glob(os.path.join(folder, "*.jpg"))
+        self.image_files = glob.glob(os.path.join(folder, "*.[jp][pn][g]"))
+        if not self.image_files:
+            print("No images found in folder:", folder)
+            return
         self.current_index = 0
 
     def calculate_tumor_size(self, contour, pixel_to_cm):
